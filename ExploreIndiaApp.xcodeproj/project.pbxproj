@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADA4227B237D705800CBFB64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4227A237D705800CBFB64 /* AppDelegate.swift */; };
+		ADA4227D237D705800CBFB64 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4227C237D705800CBFB64 /* HomeViewController.swift */; };
+		ADA42282237D705A00CBFB64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA42281237D705A00CBFB64 /* Assets.xcassets */; };
+		ADA42285237D705A00CBFB64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA42283237D705A00CBFB64 /* LaunchScreen.storyboard */; };
+		ADA4228E237D717500CBFB64 /* SnapKit.framework in Embed files */ = {isa = PBXBuildFile; fileRef = ADA4228D237D717500CBFB64 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ADA42290237D718400CBFB64 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA4228D237D717500CBFB64 /* SnapKit.framework */; };
+		ADA42292237D754200CBFB64 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA42291237D754200CBFB64 /* CityViewController.swift */; };
+		ADA42294237D76C600CBFB64 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA42293237D76C600CBFB64 /* DescriptionViewController.swift */; };
+		ADA42298237D7F4400CBFB64 /* Dic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA42297237D7F4400CBFB64 /* Dic.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADA4228C237D713300CBFB64 /* Embed files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ADA4228E237D717500CBFB64 /* SnapKit.framework in Embed files */,
+			);
+			name = "Embed files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ADA42277237D705800CBFB64 /* ExploreIndiaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreIndiaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA4227A237D705800CBFB64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADA4227C237D705800CBFB64 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ADA42281237D705A00CBFB64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADA42284237D705A00CBFB64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADA42286237D705A00CBFB64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA4228D237D717500CBFB64 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		ADA42291237D754200CBFB64 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		ADA42293237D76C600CBFB64 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		ADA42297237D7F4400CBFB64 /* Dic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dic.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADA42274237D705800CBFB64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA42290237D718400CBFB64 /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADA4226E237D705800CBFB64 = {
+			isa = PBXGroup;
+			children = (
+				ADA4228D237D717500CBFB64 /* SnapKit.framework */,
+				ADA42279237D705800CBFB64 /* ExploreIndiaApp */,
+				ADA42278237D705800CBFB64 /* Products */,
+				ADA4228F237D718400CBFB64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADA42278237D705800CBFB64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADA42277237D705800CBFB64 /* ExploreIndiaApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADA42279237D705800CBFB64 /* ExploreIndiaApp */ = {
+			isa = PBXGroup;
+			children = (
+				ADA4227A237D705800CBFB64 /* AppDelegate.swift */,
+				ADA4227C237D705800CBFB64 /* HomeViewController.swift */,
+				ADA42291237D754200CBFB64 /* CityViewController.swift */,
+				ADA42293237D76C600CBFB64 /* DescriptionViewController.swift */,
+				ADA42281237D705A00CBFB64 /* Assets.xcassets */,
+				ADA42283237D705A00CBFB64 /* LaunchScreen.storyboard */,
+				ADA42286237D705A00CBFB64 /* Info.plist */,
+				ADA42297237D7F4400CBFB64 /* Dic.swift */,
+			);
+			path = ExploreIndiaApp;
+			sourceTree = "<group>";
+		};
+		ADA4228F237D718400CBFB64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADA42276237D705800CBFB64 /* ExploreIndiaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA42289237D705A00CBFB64 /* Build configuration list for PBXNativeTarget "ExploreIndiaApp" */;
+			buildPhases = (
+				ADA42273237D705800CBFB64 /* Sources */,
+				ADA42274237D705800CBFB64 /* Frameworks */,
+				ADA42275237D705800CBFB64 /* Resources */,
+				ADA4228C237D713300CBFB64 /* Embed files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExploreIndiaApp;
+			productName = ExploreIndiaApp;
+			productReference = ADA42277237D705800CBFB64 /* ExploreIndiaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADA4226F237D705800CBFB64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Kulanthaivel, Myl (.)";
+				TargetAttributes = {
+					ADA42276237D705800CBFB64 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = ADA42272237D705800CBFB64 /* Build configuration list for PBXProject "ExploreIndiaApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADA4226E237D705800CBFB64;
+			productRefGroup = ADA42278237D705800CBFB64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADA42276237D705800CBFB64 /* ExploreIndiaApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADA42275237D705800CBFB64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA42285237D705A00CBFB64 /* LaunchScreen.storyboard in Resources */,
+				ADA42282237D705A00CBFB64 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADA42273237D705800CBFB64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA4227D237D705800CBFB64 /* HomeViewController.swift in Sources */,
+				ADA42294237D76C600CBFB64 /* DescriptionViewController.swift in Sources */,
+				ADA4227B237D705800CBFB64 /* AppDelegate.swift in Sources */,
+				ADA42298237D7F4400CBFB64 /* Dic.swift in Sources */,
+				ADA42292237D754200CBFB64 /* CityViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ADA42283237D705A00CBFB64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA42284237D705A00CBFB64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADA42287237D705A00CBFB64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADA42288237D705A00CBFB64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADA4228A237D705A00CBFB64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ExploreIndiaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.photo.ExploreIndiaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADA4228B237D705A00CBFB64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ExploreIndiaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.photo.ExploreIndiaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADA42272237D705800CBFB64 /* Build configuration list for PBXProject "ExploreIndiaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA42287237D705A00CBFB64 /* Debug */,
+				ADA42288237D705A00CBFB64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA42289237D705A00CBFB64 /* Build configuration list for PBXNativeTarget "ExploreIndiaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA4228A237D705A00CBFB64 /* Debug */,
+				ADA4228B237D705A00CBFB64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADA4226F237D705800CBFB64 /* Project object */;
+}
