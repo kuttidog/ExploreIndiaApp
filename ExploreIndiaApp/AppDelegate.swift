@@ -12,16 +12,21 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var homeCoordinator: HomeCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = HomeViewController()
-        let nc = UINavigationController(rootViewController: vc)
+        let nc = UINavigationController()
         window?.rootViewController = nc
         window?.makeKeyAndVisible()
+        homeCoordinator = HomeCoordinator(router: nc)
+        homeCoordinator?.start()
         
+        //        let vc = HomeViewController()
+        //        let nc = UINavigationController(rootViewController: vc)
+        //        window?.rootViewController = nc
+        //        window?.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true
     }

@@ -35,6 +35,7 @@ class DescriptionViewController: UIViewController {
         var label = UILabel()
         label.text = "City desceription"
         label.numberOfLines = 0
+        label.textAlignment = .justified
         return label
     }()
     
@@ -53,9 +54,11 @@ class DescriptionViewController: UIViewController {
         view.addSubview(label)
         label.snp.makeConstraints { (make) in
             make.top.equalTo(appTitle.snp.top).offset(50)
+            make.centerX.equalToSuperview()
             make.width.equalTo(200)
             make.height.equalTo(400)
         }
     }
+    
     
 }

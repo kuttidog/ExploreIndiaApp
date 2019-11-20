@@ -11,7 +11,18 @@ import SnapKit
 
 
 class HomeViewController: UIViewController {
-
+    
+    let homeViewModel: HomeViewModel
+    weak var delegate: HomeCoordinatorDelegate?
+    
+    init(homeView: HomeViewModel){
+        self.homeViewModel = homeView
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     var appTitle: UILabel = {
         var title = UILabel()
@@ -43,6 +54,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .gray
         
+        appTitle.text = homeViewModel.appTitle
+        label.text = homeViewModel.labelText
+        holdertext.placeholder = homeViewModel.placeHolder
+        
+        
         view.addSubview(appTitle)
         appTitle.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
@@ -64,14 +80,18 @@ class HomeViewController: UIViewController {
         submit.snp.makeConstraints { (make) in
             make.top.equalTo(holdertext.snp.top).offset(30)
         }
-        
     }
+    
     @objc func didTapDoneButton(sender:UIButton) {
         guard let state = holdertext.text else { return }
-        var states = (dictionaryExploreIndia["state"] as? [String : Any]) ?? [:]
-        let city = states["\(state)"] as? [String : String] ?? [:]
-        let vc = CityViewController(titleString: state)
-        self.navigationController?.pushViewController(vc, animated: true)
+        delegate?.didTapDoneButton(titleString: state)
+//        var states = (dictionaryExploreIndia["state"] as? [String : Any]) ?? [:]
+//        let city = states["\(state)"] as? [String : String] ?? [:]
+//        let vc = CityViewController(titleString: state)
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
+protocol HomeCoordinatorDelegate: class {
+    func didTapDoneButton(titleString: String) 
+}

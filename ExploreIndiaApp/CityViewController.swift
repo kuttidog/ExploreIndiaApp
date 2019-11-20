@@ -11,13 +11,14 @@ import SnapKit
 import UIKit
 
 class CityViewController: UIViewController {
-  
-    var appTitleChange: String
-  
     
-    init(titleString: String) {
+    weak var delegate: CityCoordinatorDelegate?
+    var appTitleChange: String
+    var cityModel: CityViewModel
+    
+    init(titleString: String, cityModel: CityViewModel) {
         self.appTitleChange = titleString
-        
+        self.cityModel = cityModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -46,7 +47,7 @@ class CityViewController: UIViewController {
     var submit: UIButton = {
         var done = UIButton()
         done.setTitle("Done", for: .normal)
-        done.addTarget(self, action: #selector(didTapDoneButton(sender:)), for: .touchUpInside)
+        done.addTarget(self, action: #selector(cityDidTapDoneButton(sender:)), for: .touchUpInside)
         return done
     }()
     
@@ -80,19 +81,19 @@ class CityViewController: UIViewController {
         
     }
     
-    @objc func didTapDoneButton(sender: UIButton) {
+    @objc func cityDidTapDoneButton(sender: UIButton) {
         
         var state = (dictionaryExploreIndia["state"] as? [String : Any]) ?? [:]
-        let city = state["Andhra"] as? [String : String] ?? [:]
+        let city = state["\(appTitleChange)"] as? [String : String] ?? [:]
         let cityDescription: String = city["\(holdertext.text!)"] ?? ""
-        let vc = DescriptionViewController(titleString: holdertext.text!, desc: cityDescription)
-        self.navigationController?.pushViewController(vc, animated: true)
-
-        
+        guard let enteredCity = holdertext.text else {return}
+        delegate?.cityDidTapDoneButton(titleString: enteredCity, cityDesc: cityDescription)
     }
     
-    }
- 
+}
 
+protocol CityCoordinatorDelegate: class {
+    func cityDidTapDoneButton(titleString: String, cityDesc: String)
+}
 
 

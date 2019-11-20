@@ -16,6 +16,10 @@
 		ADA42292237D754200CBFB64 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA42291237D754200CBFB64 /* CityViewController.swift */; };
 		ADA42294237D76C600CBFB64 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA42293237D76C600CBFB64 /* DescriptionViewController.swift */; };
 		ADA42298237D7F4400CBFB64 /* Dic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA42297237D7F4400CBFB64 /* Dic.swift */; };
+		ADA4229A2382A4FC00CBFB64 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA422992382A4FC00CBFB64 /* HomeCoordinator.swift */; };
+		ADA4229C2382B47B00CBFB64 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4229B2382B47B00CBFB64 /* HomeViewModel.swift */; };
+		ADA4229E2382B77A00CBFB64 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4229D2382B77A00CBFB64 /* CityViewModel.swift */; };
+		ADA422A02383A66B00CBFB64 /* CityCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA4229F2383A66B00CBFB64 /* CityCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +47,10 @@
 		ADA42291237D754200CBFB64 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		ADA42293237D76C600CBFB64 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		ADA42297237D7F4400CBFB64 /* Dic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dic.swift; sourceTree = "<group>"; };
+		ADA422992382A4FC00CBFB64 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		ADA4229B2382B47B00CBFB64 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		ADA4229D2382B77A00CBFB64 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		ADA4229F2383A66B00CBFB64 /* CityCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 				ADA4227A237D705800CBFB64 /* AppDelegate.swift */,
 				ADA4227C237D705800CBFB64 /* HomeViewController.swift */,
 				ADA42291237D754200CBFB64 /* CityViewController.swift */,
+				ADA422992382A4FC00CBFB64 /* HomeCoordinator.swift */,
+				ADA4229F2383A66B00CBFB64 /* CityCoordinator.swift */,
+				ADA4229D2382B77A00CBFB64 /* CityViewModel.swift */,
+				ADA4229B2382B47B00CBFB64 /* HomeViewModel.swift */,
 				ADA42293237D76C600CBFB64 /* DescriptionViewController.swift */,
 				ADA42281237D705A00CBFB64 /* Assets.xcassets */,
 				ADA42283237D705A00CBFB64 /* LaunchScreen.storyboard */,
@@ -170,9 +182,13 @@
 			files = (
 				ADA4227D237D705800CBFB64 /* HomeViewController.swift in Sources */,
 				ADA42294237D76C600CBFB64 /* DescriptionViewController.swift in Sources */,
+				ADA4229C2382B47B00CBFB64 /* HomeViewModel.swift in Sources */,
+				ADA422A02383A66B00CBFB64 /* CityCoordinator.swift in Sources */,
+				ADA4229E2382B77A00CBFB64 /* CityViewModel.swift in Sources */,
 				ADA4227B237D705800CBFB64 /* AppDelegate.swift in Sources */,
 				ADA42298237D7F4400CBFB64 /* Dic.swift in Sources */,
 				ADA42292237D754200CBFB64 /* CityViewController.swift in Sources */,
+				ADA4229A2382A4FC00CBFB64 /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
